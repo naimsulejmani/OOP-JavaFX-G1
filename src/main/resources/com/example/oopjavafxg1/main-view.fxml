@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.oopjavafxg1.MainController"
+          prefHeight="400.0" prefWidth="600.0" alignment="CENTER" gridLinesVisible="false">
+
+
+    <Label text="Name" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="txtName" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Surname" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="txtSurname" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Comment" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextArea fx:id="areaComment" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label text="Birthdate" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <DatePicker fx:id="dpBirthdate" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Button text="Submit" fx:id="btnSubmit" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <Button text="Reset" fx:id="btnReset" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+</GridPane>
