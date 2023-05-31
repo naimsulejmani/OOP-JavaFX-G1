@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
           fx:controller="com.example.oopjavafxg1.MainController"
-          prefHeight="400.0" prefWidth="600.0" alignment="CENTER" gridLinesVisible="false">
+          prefHeight="400.0" prefWidth="600.0" alignment="CENTER" gridLinesVisible="false"
+>
 
 
     <Label text="Name" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
@@ -24,7 +22,26 @@
     <Label text="Birthdate" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
     <DatePicker fx:id="dpBirthdate" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
 
-    <Button text="Submit" fx:id="btnSubmit" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
-    <Button text="Reset" fx:id="btnReset" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+    <Button text="Submit" fx:id="btnSubmit" GridPane.rowIndex="5" GridPane.columnIndex="0"
+            onAction="#onSubmit"
+    />
+    <Button text="Reset" fx:id="btnReset" GridPane.rowIndex="5" GridPane.columnIndex="1"
+            onAction="#reset"
+    />
 
+    <Label text="Lista e Personave" GridPane.rowIndex="6" GridPane.columnSpan="2"/>
+    <ListView fx:id="listPersons" GridPane.rowIndex="7" GridPane.columnSpan="2"/>
+    <Label text="Tabela e personave" GridPane.rowIndex="8" GridPane.columnSpan="2"/>
+    <TableView fx:id="tablePersons" GridPane.rowIndex="9" GridPane.columnSpan="2"/>
+
+    <rowConstraints>
+        <RowConstraints minHeight="35"/>
+        <RowConstraints minHeight="35"/>
+        <RowConstraints minHeight="200"/>
+        <RowConstraints minHeight="35"/>
+    </rowConstraints>
+    <columnConstraints>
+        <ColumnConstraints minWidth="75"/>
+        <ColumnConstraints minWidth="250"/>
+    </columnConstraints>
 </GridPane>
