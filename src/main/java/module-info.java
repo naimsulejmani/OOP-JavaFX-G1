@@ -2,6 +2,8 @@ module com.example.oopjavafxg1 {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
+    requires java.sql;
+    requires com.microsoft.sqlserver.jdbc;
 
 //    requires org.controlsfx.controls;
 //    requires com.dlsc.formsfx;
