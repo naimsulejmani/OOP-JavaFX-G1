@@ -5,7 +5,7 @@
 
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
-          fx:controller="com.example.oopjavafxg1.MainController"
+          fx:controller="com.example.oopjavafxg1.controllers.PersonController"
           prefHeight="400.0" prefWidth="600.0" alignment="CENTER" gridLinesVisible="false"
 >
 
@@ -27,6 +27,9 @@
     />
     <Button text="Reset" fx:id="btnReset" GridPane.rowIndex="5" GridPane.columnIndex="1"
             onAction="#reset"
+    />
+    <Button text="Delete" fx:id="btnDelete" GridPane.rowIndex="5" GridPane.columnIndex="2"
+            onAction="#delete"
     />
 
     <Label text="Lista e Personave" GridPane.rowIndex="6" GridPane.columnSpan="2"/>

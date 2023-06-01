@@ -15,4 +15,7 @@ module com.example.oopjavafxg1 {
 
     opens com.example.oopjavafxg1 to javafx.fxml;
     exports com.example.oopjavafxg1;
+    exports com.example.oopjavafxg1.controllers;
+    exports com.example.oopjavafxg1.models;
+    opens com.example.oopjavafxg1.controllers to javafx.fxml;
 }

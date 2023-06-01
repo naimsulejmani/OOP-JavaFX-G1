@@ -63,6 +63,11 @@ public class Person {
     public void setBirthdate(LocalDate birthdate) {
         this.birthdate = birthdate;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%d - %s %s", id, name, surname);
+    }
 }
 
 
